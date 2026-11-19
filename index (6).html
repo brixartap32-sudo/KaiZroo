@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Brixx Myrelle R. Artap — Hunter x Hunter inspired student portfolio.">
+  <title>Brixx Myrelle R. Artap | Hunter Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
+    :root{--bg:#080b12;--panel:#101722;--panel2:#151f2d;--text:#edf3f8;--muted:#9baabd;--gold:#f5c451;--green:#a7e36d;--line:rgba(245,196,81,.2);--shadow:0 18px 60px rgba(0,0,0,.35)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 5%,rgba(167,227,109,.09),transparent 25rem),radial-gradient(circle at 10% 35%,rgba(245,196,81,.07),transparent 30rem),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 85%);z-index:-1}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Barlow Condensed',sans-serif;font-size:1.35rem;font-weight:900;letter-spacing:.08em}.brand span{color:var(--gold)}nav{display:flex;gap:24px;align-items:center}nav a{font-size:.83rem;color:var(--muted);transition:.2s}nav a:hover{color:var(--gold)}
+    .nav-actions{display:flex;gap:9px;align-items:center}.btn{border:1px solid var(--line);background:rgba(245,196,81,.08);color:var(--gold);padding:10px 14px;border-radius:8px;font:700 .78rem 'DM Sans';letter-spacing:.04em;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-2px);background:rgba(245,196,81,.16);box-shadow:0 8px 24px rgba(245,196,81,.1)}.btn.primary{background:var(--gold);color:#15120a;border-color:var(--gold)}.btn.small{padding:7px 10px;font-size:.7rem}
+    .hero{min-height:660px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:80px 0 90px;position:relative}.eyebrow{color:var(--green);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}.hero h1{font:900 clamp(3.5rem,8vw,7.3rem)/.88 'Barlow Condensed',sans-serif;letter-spacing:-.025em;margin:20px 0}.hero h1 span{display:block;color:var(--gold);text-shadow:0 0 35px rgba(245,196,81,.18)}.hero p{max-width:560px;color:var(--muted);font-size:1.02rem}.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-art{min-height:390px;display:grid;place-items:center;position:relative}.orbit{width:min(360px,78vw);aspect-ratio:1;border:1px solid rgba(245,196,81,.35);border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 80px rgba(245,196,81,.08),inset 0 0 60px rgba(167,227,109,.04);animation:float 6s ease-in-out infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed rgba(167,227,109,.35);border-radius:50%;inset:24px;transform:rotate(35deg)}.orbit:after{inset:55px;transform:rotate(-25deg);border-color:rgba(245,196,81,.24)}.badge-mark{width:155px;height:155px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f7d77f,#b77c21);color:#17120a;font:900 4.4rem 'Barlow Condensed';box-shadow:0 0 70px rgba(245,196,81,.24);z-index:1}.orbit-label{position:absolute;bottom:18px;right:-5px;background:var(--panel);border:1px solid var(--line);padding:10px 14px;border-radius:8px;color:var(--gold);font:700 .72rem 'Barlow Condensed';letter-spacing:.13em}
+    .section{padding:82px 0;border-top:1px solid rgba(255,255,255,.06)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.kicker{color:var(--green);font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.section h2{font:800 clamp(2.3rem,5vw,3.7rem)/1 'Barlow Condensed';margin:8px 0 0;letter-spacing:.02em}.section-intro{color:var(--muted);max-width:470px;font-size:.9rem}
+    .profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:linear-gradient(145deg,rgba(21,31,45,.94),rgba(13,19,29,.94));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:26px;box-shadow:var(--shadow)}.panel h3{font:700 1.45rem 'Barlow Condensed';letter-spacing:.05em;margin:0 0 12px;color:var(--gold)}.panel p{color:var(--muted);margin:0}.stat-row{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}.stat{border:1px solid rgba(255,255,255,.08);padding:12px 15px;border-radius:9px;min-width:110px}.stat strong{display:block;color:var(--green);font:800 1.35rem 'Barlow Condensed'}.stat span{font-size:.7rem;color:var(--muted)}
+    .learning-list{display:grid;gap:10px}.learning-item{display:flex;align-items:center;gap:14px;padding:15px 17px;background:var(--panel);border:1px solid rgba(255,255,255,.07);border-radius:10px;transition:.25s}.learning-item:hover{border-color:var(--line);transform:translateX(5px)}.learning-num{color:var(--gold);font:800 1.2rem 'Barlow Condensed';min-width:28px}.learning-text{flex:1;color:#d7e0e9;font-size:.9rem}
+    .task-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.task-card{background:linear-gradient(150deg,var(--panel2),var(--panel));border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px;min-height:205px;display:flex;flex-direction:column;transition:.28s;position:relative;overflow:hidden}.task-card:before{content:"";position:absolute;width:110px;height:110px;right:-45px;top:-45px;border:1px solid rgba(245,196,81,.18);border-radius:50%;transition:.3s}.task-card:hover{transform:translateY(-7px);border-color:rgba(245,196,81,.4);box-shadow:0 18px 35px rgba(0,0,0,.25)}.task-card:hover:before{transform:scale(1.5)}.task-tag{font-size:.65rem;letter-spacing:.16em;color:var(--green);font-weight:700;text-transform:uppercase}.task-card h3{font:700 1.35rem 'Barlow Condensed';margin:12px 0 7px}.task-card p{font-size:.82rem;color:var(--muted);margin:0 0 18px}.task-card .card-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center}.placeholder{font-size:.68rem;color:#758397}.card-link{font-size:.72rem;color:var(--gold);font-weight:700}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}.contact-line{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;gap:15px;font-size:.85rem}.contact-line span:first-child{color:var(--muted)}.contact-line span:last-child{color:var(--gold);text-align:right;overflow-wrap:anywhere}.contact-note{color:var(--muted);font-size:.85rem;margin-top:16px}
+    footer{padding:28px 0;border-top:1px solid rgba(255,255,255,.07);color:#77869a;font-size:.75rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .edit-hint{font-size:.68rem;color:#7f8da0;margin-top:14px}.edit-mode [contenteditable="true"]{outline:1px dashed rgba(167,227,109,.65);outline-offset:4px;border-radius:3px;cursor:text}.edit-mode [contenteditable="true"]:focus{outline:1px solid var(--green);background:rgba(167,227,109,.06)}
+    .music-dock{position:fixed;right:18px;bottom:18px;z-index:30;background:rgba(16,23,34,.94);border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;gap:9px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}.music-dock small{color:var(--muted);font-size:.65rem}.music-dock input{width:115px;max-width:25vw;background:#080d15;color:var(--text);border:1px solid #334155;border-radius:5px;padding:6px;font-size:.65rem}
+    .toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;background:#d9f99d;color:#17210c;padding:10px 16px;border-radius:8px;font-size:.8rem;font-weight:700;transition:.3s;z-index:60;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}@keyframes reveal{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}.reveal{animation:reveal .8s both}
+    @media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding:65px 0}.hero-art{min-height:310px}.profile-grid,.contact-grid{grid-template-columns:1fr}.task-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.hero h1{font-size:4.1rem}.task-grid{grid-template-columns:1fr}.panel{padding:21px}.music-dock{right:9px;bottom:9px}.music-dock input{width:85px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">BRIXX<span>.</span>PORTFOLIO</a>
+    <nav aria-label="Main navigation"><a href="#profile">Profile</a><a href="#learning">Learning</a><a href="#midterm">Midterm</a><a href="#finals">Finals</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions"><button class="btn small" id="editBtn">✎ Edit</button><button class="btn small" id="saveBtn">Save</button></div>
+  </div>
+</header>
+<main>
+  <section class="wrap hero" id="home">
+    <div class="reveal">
+      <div class="eyebrow">Hunter License No. 2026 · Student Portfolio</div>
+      <h1>THE HUNT<br><span>FOR KNOWLEDGE.</span></h1>
+      <p>Welcome to my digital portfolio. This is where I keep my activities, projects, and progress as I continue learning, exploring new skills, and taking on new challenges.</p>
+      <div class="hero-cta"><a class="btn primary" href="#midterm">Explore my work ↘</a><a class="btn" href="#profile">Meet the Hunter</a></div>
+    </div>
+    <div class="hero-art" aria-label="Decorative hunter-inspired emblem"><div class="orbit"><div class="badge-mark">B</div><div class="orbit-label">LICENSE HOLDER · BRX-01</div></div></div>
+  </section>
+
+  <section class="section" id="profile"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / Identity</div><h2>PROFILE: ABOUT ME</h2></div><p class="section-intro">Every hunter has a story. This is mine—my background, interests, and the goals I'm working toward.</p></div>
+    <div class="profile-grid">
+      <article class="panel"><h3>WHO I AM</h3><p contenteditable="false" data-edit="profile">Hi! I'm Brixx Myrelle R. Artap. I am a student who enjoys learning new things, improving my skills, and exploring technology. I believe that every challenge is an opportunity to gain experience and become better.</p><div class="stat-row"><div class="stat"><strong>01</strong><span>Curious mind</span></div><div class="stat"><strong>∞</strong><span>Room to grow</span></div><div class="stat"><strong>2026</strong><span>Current journey</span></div></div></article>
+      <article class="panel"><h3>MY INTERESTS & GOALS</h3><p contenteditable="false" data-edit="interests">I am interested in computers, programming, creative design, and discovering how things work. My goal is to keep developing my knowledge, finish my studies, and use what I learn to create useful and meaningful projects.</p><p class="edit-hint">You can change this text when Edit mode is on.</p></article>
+    </div>
+  </div></section>
+
+  <section class="section" id="learning"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / Progress Log</div><h2>WHAT I'M LEARNING</h2></div><p class="section-intro">One line at a time. Update each entry as you learn something new.</p></div>
+    <div class="learning-list">
+      <div class="learning-item"><span class="learning-num">01</span><span class="learning-text" contenteditable="false" data-edit="learn1">I am learning the fundamentals of programming and how to solve problems step by step.</span></div>
+      <div class="learning-item"><span class="learning-num">02</span><span class="learning-text" contenteditable="false" data-edit="learn2">I am improving my skills in HTML, CSS, and creating web pages.</span></div>
+      <div class="learning-item"><span class="learning-num">03</span><span class="learning-text" contenteditable="false" data-edit="learn3">I am practicing patience, creativity, and critical thinking when working on tasks.</span></div>
+      <div class="learning-item"><span class="learning-num">04</span><span class="learning-text" contenteditable="false" data-edit="learn4">I am learning from mistakes and using feedback to improve my next output.</span></div>
+    </div>
+  </div></section>
+
+  <section class="section" id="midterm"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / Mission Archive</div><h2>MIDTERM LAB TASKS</h2></div><p class="section-intro">A collection of my midterm activities. Replace the placeholders with your task titles, descriptions, and GitHub links.</p></div>
+    <div class="task-grid" id="midtermGrid"></div>
+  </div></section>
+
+  <section class="section" id="finals"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">04 / Advanced Missions</div><h2>FINAL LAB TASKS</h2></div><p class="section-intro">My latest missions and practical outputs. Add your finished projects here as you complete them.</p></div>
+    <div class="task-grid" id="finalGrid"></div>
+  </div></section>
+
+  <section class="section" id="contact"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">05 / Send a Signal</div><h2>CONTACT ME</h2></div><p class="section-intro">Have a question, suggestion, or project idea? Feel free to reach out.</p></div>
+    <div class="contact-grid">
+      <article class="panel"><h3>LET'S CONNECT</h3><p contenteditable="false" data-edit="contactIntro">I'm open to learning, collaborating, and connecting with people who share the same interest in technology and creativity.</p><p class="edit-hint">Update the details below with your preferred contact information.</p></article>
+      <article class="panel">
+        <div class="contact-line"><span>Email</span><span contenteditable="false" data-edit="email">your-email@example.com</span></div>
+        <div class="contact-line"><span>GitHub</span><span contenteditable="false" data-edit="github">github.com/your-username</span></div>
+        <div class="contact-line"><span>Facebook / Social</span><span contenteditable="false" data-edit="social">Add your profile link</span></div>
+        <div class="contact-line"><span>Location</span><span contenteditable="false" data-edit="location">Philippines</span></div>
+      </article>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Brixx Myrelle R. Artap</span><span>Stay curious. Keep exploring. Keep learning.</span></div></footer>
+
+<div class="music-dock"><button class="btn small" id="musicBtn" title="Play or pause background music">▶ Music</button><input id="musicUrl" aria-label="Audio file URL" placeholder="Audio URL (optional)"><audio id="audio" loop></audio></div>
+<div class="toast" id="toast">Portfolio saved in this browser.</div>
+<script>
+  const midtermTasks = [
+    ["Matrix Input Program","A Java program that accepts numbers for a 3×3 matrix, displays the matrix, validates whole-number input, and lets the user run it again.","Matrix.java","Matrix.java"],
+    ["Student Grade Management System","A Java program that uses a 3D array to store grades for 2 sections, 3 students per section, and 3 subjects: Java, Database, and Networking. It displays grades and calculates student and section averages, with validation for grades from 0 to 100.","StudentGradeSystem_Task2.java","StudentGradeSystem_Task2.java"],
+    ["Lab Task 03","Describe the goal or main feature of this activity.","Add your GitHub link"],
+    ["Lab Task 04","Add a short summary of your output here.","Add your GitHub link"],
+    ["Lab Task 05","Explain the skills you practiced in this task.","Add your GitHub link"],
+    ["Lab Task 06","Replace this placeholder with your task details.","Add your GitHub link"]
+  ];
+  const finalTasks = [
+    ["Final Lab 01","Add the title and a short explanation of your final lab activity.","Add your GitHub link"],
+    ["Final Lab 02","Describe the program, website, or output you completed.","Add your GitHub link"],
+    ["Final Lab 03","Write a few words about the features of your project.","Add your GitHub link"],
+    ["Final Lab 04","Add what you learned while completing this task.","Add your GitHub link"],
+    ["Final Lab 05","Replace this text with your project summary.","Add your GitHub link"],
+    ["Final Lab 06","Add another final task when you are ready.","Add your GitHub link"]
+  ];
+  const makeCards = (items, prefix) => items.map((item,i)=>`
+    <article class="task-card">
+      <div class="task-tag">${prefix} · ${(i+1).toString().padStart(2,'0')}</div>
+      <h3 contenteditable="false" data-edit="${prefix}${i}title">${item[0]}</h3>
+      <p contenteditable="false" data-edit="${prefix}${i}desc">${item[1]}</p>
+      <div class="card-bottom"><span class="placeholder" contenteditable="false" data-edit="${prefix}${i}note">${item[2]}</span><span><span><a class="card-link" href="${item[3] || '#'}" data-edit-link="${prefix}${i}link" target="_blank" rel="noopener">VIEW SOURCE ↗</a>${prefix === 'mid' && i === 1 ? ' <a class="card-link" href="Lab_Task_2_Report.pdf" target="_blank" rel="noopener">· VIEW REPORT ↗</a>' : ''}</span>${item[4] ? ` <a class="card-link" href="${item[4]}" target="_blank" rel="noopener">· VIEW REPORT ↗</a>` : ""}</span></div>
+    </article>`).join('');
+  document.getElementById('midtermGrid').innerHTML = makeCards(midtermTasks,'mid');
+  document.getElementById('finalGrid').innerHTML = makeCards(finalTasks,'final');
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const editBtn=document.getElementById('editBtn'), saveBtn=document.getElementById('saveBtn'), toast=document.getElementById('toast');
+  let editing=false;
+  function setEdit(on){editing=on;document.body.classList.toggle('edit-mode',on);document.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable=on?'true':'false');editBtn.textContent=on?'✓ Done Editing':'✎ Edit';}
+  editBtn.addEventListener('click',()=>setEdit(!editing));
+  function collect(){const data={};document.querySelectorAll('[data-edit]').forEach(el=>data[el.dataset.edit]=el.innerHTML);document.querySelectorAll('[data-edit-link]').forEach(el=>data[el.dataset.editLink]=el.getAttribute('href'));return data;}
+  function save(){localStorage.setItem('hunterPortfolioBrixx',JSON.stringify(collect()));setEdit(false);toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200);}
+  function load(){try{const data=JSON.parse(localStorage.getItem('hunterPortfolioBrixx')||'{}');document.querySelectorAll('[data-edit]').forEach(el=>{if(data[el.dataset.edit]!==undefined)el.innerHTML=data[el.dataset.edit]});document.querySelectorAll('[data-edit-link]').forEach(el=>{if(data[el.dataset.editLink])el.href=data[el.dataset.editLink]});}catch(e){console.warn('Could not load saved portfolio data.',e)}}
+  saveBtn.addEventListener('click',save);load();
+  document.querySelectorAll('[data-edit-link]').forEach(link=>link.addEventListener('click',e=>{if(editing){e.preventDefault();const current=link.getAttribute('href')==='#'?'':link.getAttribute('href');const value=prompt('Paste your GitHub Pages or project URL:',current);if(value!==null){link.href=value.trim()||'#';save();}}}));
+  const audio=document.getElementById('audio'),musicBtn=document.getElementById('musicBtn'),musicUrl=document.getElementById('musicUrl');
+  musicBtn.addEventListener('click',async()=>{if(audio.paused){if(!audio.src){const url=musicUrl.value.trim();if(!url){alert('Paste a direct audio file URL first. Use music you have permission to use.');return;}audio.src=url;}try{await audio.play();musicBtn.textContent='Ⅱ Pause';}catch(e){alert('The audio could not be played. Check that the URL points directly to an audio file.');}}else{audio.pause();musicBtn.textContent='▶ Music';}});
+  musicUrl.addEventListener('change',()=>{if(musicUrl.value.trim()){audio.src=musicUrl.value.trim();audio.pause();musicBtn.textContent='▶ Music';}});
+</script>
+</body>
+</html>
